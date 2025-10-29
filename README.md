@@ -17,4 +17,21 @@ It uses open-source NLP tools and regular expressions to maximize correct extrac
 **Relation**
 - `PAN_Of` — links a PAN to a person or organisation
 
-**Example:**
+## 🧰 Technologies Used
+
+- **Python 3.10+**
+- **pdfplumber** – extract text from PDF files  
+- **spaCy** – detect person and organisation entities  
+- **pandas** – create and export structured CSV results  
+- **regex (re)** – detect valid PAN patterns  
+- *(Optional)* **LLM validation** – open-source models like *Mistral 7B* can validate extracted relations  
+
+## 📂 Project Files
+
+| File | Description |
+|------|--------------|
+| `extract_pan_relations.py` | Main script for entity and relation extraction |
+| `sample_filled_aadhaar_like.pdf` | Sample input PDF used for testing |
+| `result.csv` | Extracted entities and relations |
+| `requirements.txt` | Python dependencies |
+| `README.md` | Project documentation |
